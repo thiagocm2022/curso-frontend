@@ -1,0 +1,268 @@
+/* 
+
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-family: serif;
+	font-size: 62.5%; /* equivalente a 10px */
+}
+
+body {
+	background-color: white;
+}
+
+h1 {
+	font-size: 3rem; 
+	color: #ffffff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+	font-size: 2rem; /* equivalente a 20px */
+	height: 3rem;
+	color: #5e0303;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+
+h3 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.5rem
+	}
+
+p, li {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ff00009d;
+	padding: 1rem;
+}
+
+p1 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 15px;
+	color: #000000;
+
+}
+a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+
+.width-100 {
+    width: 100%;
+    width: 100vw; /* viewport width */
+    background-color: rgba(10, 9, 7, 0.836);
+    padding: 10px 0;
+	display: table;
+    height: 100%;
+	
+}
+
+
+ul {
+	font-size: 20px;
+}
+
+ul li {
+	font-size: 0.8em; 
+	font-size: 1.6rem; /* equivalente a 16px */
+	width: 80%;
+	height: 2rem; /* equivalente a 30px */
+}
+
+p {
+	font-size: 1.6rem; /* equivalente a 16px */
+	width: 80%;
+	height: 0.5rem;
+}
+
+.logo {
+	background-color: brown;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+	filter: grayscale(0%);
+	}
+
+.logo:hover {
+	filter: saturate(200%) sepia(100%)
+	}
+
+
+
+
+
+.menu li {
+	background-color: rgba(7, 7, 7, 0.11);
+	border-bottom: 1px solid #ccc;
+	display: block;
+	padding: 1rem 1rem 1rem 1rem;
+	line-height: 0.5rem;
+	height: 100%
+		}
+
+.menu a {
+	color: rgb(255, 255, 255);
+	display: block;
+	margin-bottom: .5rem;
+	width: 100%;
+	align-items: center;
+	text-align: justify;
+}
+
+form {
+	background: #eee;
+	padding: 10px;
+}
+
+form div {
+	background: #fff;
+	border-bottom: 1px solid #33f;
+	margin: 1rem;
+	padding: 2rem;
+}
+
+label {
+	margin-bottom: 1rem;
+	font-size: 1.4rem; 
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #66F;
+}
+
+input {
+	padding: 1rem;
+}
+
+[type="text"], [type="email"], textarea, label {
+	display: block;
+	width: 100%;
+}
+
+header {
+background-color: #5e0303;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  width: 100vw
+}
+
+nav {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  }
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.navegacao {
+	font-family: 'Courier New', Courier, monospace;
+	color: #ccc;
+
+}
+
+footer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem
+ 
+}
+
+.final {
+	background-color: #5e0303;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	width: 100vw
+	
+}
+
+
+.coluna {
+	display: block;
+	width: 33.3%;
+	float: left;
+	padding: 5px;
+	background: #eee;
+	border: 1px solid slateblue;
+} 
+
+coluna {
+	display: block;
+	width: 50%;
+	float: left;
+	padding: 5px;
+	/* background: #eee;
+	border: 1px solid #333; */
+	
+  }
+  
+  
+  
+  .coluna-100w {
+	width: 100%;
+  }
+  
+  iframe {
+	width: 100%;
+  }
+
+@media (min-width: 769px) {
+	body {
+		background-color: #33f;
+	}
+    }
+
+@media (max-width: 768px) {
+	body {
+		background-color: red;
+		h1 {
+			border-left: 1px solid #000;
+		}
+	}
+    }
+
+  
+/* Smartphone */
+@media (max-width: 425px){
+    nav,
+    article,
+    .coluna {
+      width: 100%;
+      min-width: 320px;
+    }
+}
