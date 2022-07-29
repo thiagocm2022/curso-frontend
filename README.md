@@ -1,5 +1,4 @@
 # curso-frontend
-####EBAC
 
 # Git
 ## Conceitos de versionamento
@@ -21,6 +20,7 @@ Mac
 ## Criar conta GitHub
 
 ## Clonar o projeto
+git clone https://github.com/thiagocm2022/curso-frontend.git
 
 ## Commits
 Informação de alteração
